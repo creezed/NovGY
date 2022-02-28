@@ -1,0 +1,44 @@
+.navbar {
+    width: 80%;
+    display: none;
+    position: fixed;
+    transform: translateX(-110%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: rem(40);
+    box-shadow: $regular-shadow;
+    border-radius: $border-radius-m;
+    transition: $transition;
+    overflow-y: scroll;
+    &__menu {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .submenu {
+            &-text {
+                font-size: 20px;
+            }
+            &-hidden {
+                max-width: 100%;
+                font-size: 12px;
+            }
+
+        }
+    }
+    &-btn__wrapper {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+        text-align: center;
+    }
+    &--open {
+        transform: translateX(0%);
+    }
+    @include tablet {
+        display: block;
+    }
+}

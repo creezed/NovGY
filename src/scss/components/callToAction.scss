@@ -1,0 +1,39 @@
+.callToAction {
+    background-color: $second-color;
+    &--wrapper {
+        margin-top: $offset-l;
+        margin-bottom: $offset-l;
+    }
+
+    &__content {
+        padding: rem(60) rem(33);
+        display: flex;
+        justify-content: space-between;
+        gap: rem(15);
+        flex-wrap: wrap;
+        align-items: center;
+        &--reduced {
+            padding: rem(60) rem(100);
+        }
+        @include mobile {
+            padding: rem(60) 0;
+        }
+    }
+    &__text {
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        &--reduced {
+            max-width: rem(430);
+        }
+    }
+    &-title {
+        color: $text-color;
+        font-size: $callToAction-headline;
+    }
+    &-descr {
+        color: #5c5c5c;
+        font-size: $callToAction-descr;
+    }
+}

@@ -1,0 +1,28 @@
+// Zero_style
+@import '../scss/scss/_zeroStyle';
+
+
+// Var
+@import '../scss/scss/_var';
+@import '../scss/scss/_function';
+@import '../scss/scss/_mixin';
+
+// common 
+@import './common/common.scss';
+@import './common/typography';
+@import './common/button.scss';
+
+
+// Big_component
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/specialty.scss';
+@import './components/faq.scss';
+@import './components/gallery.scss';
+@import './components/footer.scss';
+
+// Small_component
+@import './common/subMebu.scss';
+@import './components/callToAction.scss';
+@import './components/navbar.scss';
+@import './components/burger.scss';

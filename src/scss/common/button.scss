@@ -1,0 +1,58 @@
+@import '../scss/function';
+
+.btn {
+    display: inline-block;
+    font-weight: $fw-bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    
+    &__header {
+        color: $white-color;
+        padding: 10px 20px;
+        background-color: $main-color;
+        border-radius: $border-radius-m;
+        border: 2px solid transparent;
+        &:hover {
+            background-color: #052064;
+        }
+
+        &--stroke {
+            background-color: transparent;
+            color: $main-color;
+            border: 2px solid $main-color;
+            border-radius: $border-radius-m;
+            font-weight: $fw-regular;
+            &:hover {
+                background-color: $main-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &__CallToAction {
+        padding: 15px 31px;
+        background-color: $main-color;
+        color: $white-color;
+        border-radius: $border-radius-m;
+        font-weight: $body-size-l;
+        &:hover {
+            background-color: #052064;
+        }
+    }
+
+    &__submit {
+        padding: 12px 46px;
+        background-color: $white-color;
+        border-radius: $border-radius-m;
+        color: $main-color;
+        font-weight: $body-size-m;
+        border: 0;
+        &:hover {
+            background-color: #eee;
+        }
+    }
+    &:active {
+        transform: translateY(10px);
+    }
+}

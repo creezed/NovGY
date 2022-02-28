@@ -1,0 +1,30 @@
+@import './_function';
+
+
+// var
+$wrapper: 1170px;
+$wrapper-header: 1250px;
+$white-color: #fff;
+$black-color: #000;
+$main-color: #002fa7;
+$second-color: #5395e94d;;
+$third-color: #eff2f9;
+$text-color: #3e3e3e;
+$offset-xl: rem(114);
+$offset-l: rem(96);
+$offset-m: rem(64);
+$small-shadow: 0px 1px 4px rgba(0, 47, 167, 0.3);
+$regular-shadow: 0px 4px 10px rgba(0, 47, 167, 0.3);
+$border-radius-m: 5px;
+$fw-bold: 700;
+$fw-regular: 400;
+$headline-size-xxl: rem(64);
+$headline-size-xl: rem(54);
+$headline-size-l: rem(34);
+$headline-size-m: rem(20);
+$body-size-l: rem(18);
+$body-size-m: rem(16);
+$body-size-s: rem(14);
+$callToAction-headline: rem(48);
+$callToAction-descr: rem(24);
+$transition: .25s ease-out;

@@ -1,0 +1,35 @@
+.headline {
+    line-height: 1.25;
+    font-weight: $fw-bold;
+
+    &--typo-xxl {
+        font-size:$headline-size-xxl;
+        font-weight: $fw-regular;
+        color: $white-color;
+        @include small-mobile{
+            font-size:$headline-size-l;
+        }
+    }
+    &--typo-xl {
+        font-size: $headline-size-xl;
+        color: $text-color;
+    }
+    &--typo-l {
+        font-size: $headline-size-l;
+    }
+    &--typo-m {
+        font-size: $headline-size-m;
+    }
+}
+
+.body__text {
+    &--typo-l {
+        font-size: $body-size-l;
+    }
+    &--typo-m {
+        font-size: $body-size-m;
+    }
+    &--typo-s {
+        font-size: $body-size-s;
+    }
+}

@@ -1,0 +1,29 @@
+html {
+    font-size: 100%;
+    @include tablet {
+        font-size: 90%;
+    }
+    @include small-tablet {
+        font-size: 80%;
+    }
+    @include mobile {
+        font-size: 70%;
+    }
+}
+
+
+body {
+    position: relative;
+    font-family:'PT Sans Caption', sans-serif;
+    font-weight: $fw-regular;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: $wrapper;
+    margin: 0 auto;
+    padding: 0 15px;
+    &--header {
+        max-width: $wrapper-header;
+    }
+}

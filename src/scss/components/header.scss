@@ -1,0 +1,39 @@
+.header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: rem(7) 0;
+    background-color: $white-color;
+    box-shadow: $regular-shadow;
+    transition: $transition;
+    &__logo {
+        img {
+            max-height: rem(60);
+            max-width: rem(60);
+        }
+    }
+    &.scroll {
+        padding: rem(15) 0;
+    }
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: rem(32);
+    }
+    &-btn__wrapper {
+        display: flex;
+        gap: rem(32);
+    }
+    @include tablet {
+        &__right {
+            display: none;
+        }
+    }
+}

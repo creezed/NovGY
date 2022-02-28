@@ -1,0 +1,109 @@
+@import '../scss/_var';
+.submenu {
+    z-index: 11;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    &-text {
+        display: flex;
+        align-items: center;
+        gap: rem(6);
+        &::after {
+            content: "";
+            display: block;
+            font-weight: $fw-bold;
+            width: 20px;
+            height: 20px;
+            background-image: url('../assets/icon/arrowDown.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: $transition;
+        }
+        &--header {
+            color: $main-color;
+            font-weight: $fw-bold;
+        }
+    }
+    &-hidden {
+        position:absolute;     
+        display:none;
+        overflow: hidden;
+        left:0; 
+        margin:0;
+        width:210%;
+        border-radius:$border-radius-m;          
+        background-color:$main-color;
+        box-shadow:0 0 5px rgba(#000, .15);
+    }
+    &-item {         
+        display:block;
+        padding:15px;
+        color: $white-color; 
+        transition: $transition;
+        &:hover {
+            background-color: #052064;
+        }       
+    }
+    &:hover {
+        .submenu-hidden {
+            display: block;
+            animation:fadeInRight .3s ease;
+        }
+        .submenu-text::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity:0;
+        transform:translate3d(-100%,0,0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+
+// mobile //
+.submenu__mobile {
+    z-index: 11;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    & > .submenu-hidden {
+        position: static;
+    }
+    &--active {
+        .submenu-hidden {
+            display: block;
+            animation:opacityMenuIn .3s ease;
+        }
+        .submenu-text::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@keyframes opacityMenuIn{
+    0%{
+        opacity:0;
+        transform: translateY(-20%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}

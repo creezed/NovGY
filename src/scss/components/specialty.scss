@@ -1,0 +1,53 @@
+.specialty {
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 96px;
+    &__title {
+        text-align: center;
+        padding-top: 160px;
+        padding-bottom: 64px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(10);
+        &:last-child {
+            > .specialty__card {
+                justify-content: center;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        padding-left: 21px;
+        gap: rem(51);
+        flex: 1 1 49%;
+        background-color: $white-color;
+        box-shadow: $small-shadow;
+        min-height: 112px;
+        transform: translateY(0%) scale(1);
+        transition: $transition;
+        &-thicker {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1;
+            row-gap: rem(10);
+        }
+        &--thicker {
+            min-height: 232px;
+        }
+        &-text {
+            max-width: 335px;
+        }
+        &:hover {
+            transform: translateY(-1.5%) scale(1.02);
+        }
+    }
+
+}
