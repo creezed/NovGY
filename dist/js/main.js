@@ -8,6 +8,7 @@ const subMenuMobile = document.querySelectorAll('.submenu__mobile');
 
 
 document.addEventListener('DOMContentLoaded', (e) => {
+    new WOW().init();
     [...faq].map(item => item.addEventListener('click', () => {
         item.classList.toggle('faq__list-item--active')
     }))

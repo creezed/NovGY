@@ -21,40 +21,40 @@
         background-size: cover;
         background-position: center;
         &--1 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-1.webp');
         }
         &--2 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-2.webp');
         }
         &--3 {
             position: relative;
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-3.webp');
             grid-row: 2 span;
             grid-column: 2 span;
         }
         &--4 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-4.webp');
         }
         &--5 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-5.webp');
         }
         &--6 {
             position: relative;
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-6.webp');
             grid-row: 2 span;
             grid-column: 2 span;
         }
         &--7 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-7.webp');
         }
         &--8 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-8.webp');
         }
         &--9 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-9.webp');
         }
         &--10 {
-            background-image: url('../assets/img/heroBanner.jpg');
+            background-image: url('../assets/img/bg-10.webp');
         }
     }
 }
