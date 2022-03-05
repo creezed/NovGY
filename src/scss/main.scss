@@ -3,11 +3,13 @@
 
 
 // Var
+@import '../scss/scss/_fonts';
 @import '../scss/scss/_var';
 @import '../scss/scss/_function';
 @import '../scss/scss/_mixin';
 
 // common 
+@import './common/animate.scss';
 @import './common/common.scss';
 @import './common/typography';
 @import './common/button.scss';

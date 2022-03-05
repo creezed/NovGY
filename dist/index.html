@@ -6,16 +6,14 @@
     <meta name="description" content="НовГУ">
     <meta name="theme-color" content="#002fa7">
     <title>Политехнический колледж НовГУ</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./assets/icon/Logo.svg">
-    <link rel="stylesheet" href="./style/animate.css">
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" media="all" href="./style/main.css">
 </head>
 <body>
     <header class="header">
         <div class="wrapper wrapper--header header--container">
-            <a href="/" class="logo header__logo"><img src="./assets/icon/LogoWithoutText.svg" alt="logo"></a>
+            <a href="/" class="logo header__logo"><img src="./assets/icon/LogoWithoutText.svg" width="60" height="60" alt="logo"></a>
             <nav class="header__right">
                 <div class="submenu">
                     <span class="submenu-text submenu-text--header body__text--typo-l">Колледжи</span>
@@ -70,7 +68,7 @@
                 </div>
             </div>
             <aside class="navbar">
-                <a href="/" class="logo header__logo"><img src="./assets/icon/LogoWithoutText.svg" alt="logo"></a>
+                <a href="/" class="logo header__logo"><img src="./assets/icon/LogoWithoutText.svg" width="60" height="60" alt="logo"></a>
                 <nav class="navbar__menu">
                     <div class="submenu__mobile">
                         <span class="submenu-text submenu-text--header body__text--typo-l">Колледжи</span>
@@ -367,13 +365,13 @@
 
     <footer class="footer">
         <div class="footer-map">
-            <iframe class="footer-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A367877ee101f216a801962ba2aa298cdf1862b7c250a9a3e3a658b5a2a5fc127&amp;source=constructor" title="ymap" width="100%" height="500" frameborder="0"></iframe>
+            <iframe class="footer-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A367877ee101f216a801962ba2aa298cdf1862b7c250a9a3e3a658b5a2a5fc127&amp;source=constructor" title="ymap" width="100%" height="500" frameborder="0" loading = "lazy"></iframe>
         </div>
         <div class="wrapper">
             <div class="footer-content body__text--typo-m">
                 <div class="footer-left">
                     <div class="footer-hero">
-                        <a href="/" class="logo-footer footer-logo--wrapper"><img src="./assets/icon/Logo.svg" alt="logo"></a>
+                        <a href="/" class="logo-footer footer-logo--wrapper"><img src="./assets/icon/Logo.svg" width="210" height="65" alt="logo"></a>
                         <small class="footer-copyright">&copy; НовГУ с 1993 по 2022</small>
                         <address class="footer-addres">
                             Великий Новгород, ул. Большая Санкт-Петербургская, д. 46 
@@ -425,7 +423,7 @@
                         </div>
                     </div>
                     <ul class="footer-link">
-                        <span class="footer-link__title">Ссылки:</span>
+                        <li><span class="footer-link__title">Ссылки:</span></li>
                         <li><a href="#">НовГУ</a></li>
                         <li><a href="#">Абитуриентам</a></li>
                         <li><a href="#">Специальности</a></li>
@@ -446,7 +444,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/wow.min.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script defer async src="./js/wow.min.js"></script>
+    <script defer async src="./js/main.js"></script>
 </body>
 </html>
