@@ -7,40 +7,38 @@ const subMenuMobile = document.querySelectorAll('.submenu__mobile');
 
 
 
-document.addEventListener('DOMContentLoaded', (e) => {
-    new WOW().init();
-    [...faq].map(item => item.addEventListener('click', () => {
-        item.classList.toggle('faq__list-item--active')
-    }))
-    
-    window.addEventListener('scroll', () => {
-        let y = window.pageYOffset;
-        y > 150 ? header.classList.add('scroll') : header.classList.remove('scroll')
-        y > 300 ? heroArrow.classList.add('hero__arrow--hidden') : heroArrow.classList.remove('hero__arrow--hidden')
+new WOW().init();
+[...faq].map(item => item.addEventListener('click', () => {
+    item.classList.toggle('faq__list-item--active')
+}))
+
+window.addEventListener('scroll', () => {
+    let y = window.pageYOffset;
+    y > 150 ? header.classList.add('scroll') : header.classList.remove('scroll')
+    y > 300 ? heroArrow.classList.add('hero__arrow--hidden') : heroArrow.classList.remove('hero__arrow--hidden')
+})
+
+heroArrow.addEventListener('click', () => {
+    const headerHight = header.offsetHeight;
+    const sectionOffset = document.querySelector('section').offsetHeight;
+    window.scrollBy({
+        top: sectionOffset - headerHight,
+        behavior: 'smooth'
     })
-    
-    heroArrow.addEventListener('click', () => {
-        const headerHight = header.offsetHeight;
-        const sectionOffset = document.querySelector('section').offsetHeight;
-        window.scrollBy({
-            top: sectionOffset - headerHight,
-            behavior: 'smooth'
-        })
-    })
-    
-    burgerBtn.addEventListener('click', () => {
-        if (burgerBtn.classList.contains('is-open')) {
-            burgerBtn.classList.toggle('is-closed')
-            navbar.classList.toggle('navbar--open')
-        } else {
-            burgerBtn.classList.toggle('is-open')
-            navbar.classList.toggle('navbar--open')
-        }
-    });
-    
-    [...subMenuMobile].map(item => {
-        item.addEventListener('click', () => {
-            item.classList.toggle('submenu__mobile--active')
-        })
+})
+
+burgerBtn.addEventListener('click', () => {
+    if (burgerBtn.classList.contains('is-open')) {
+        burgerBtn.classList.toggle('is-closed')
+        navbar.classList.toggle('navbar--open')
+    } else {
+        burgerBtn.classList.toggle('is-open')
+        navbar.classList.toggle('navbar--open')
+    }
+});
+
+[...subMenuMobile].map(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('submenu__mobile--active')
     })
 })
