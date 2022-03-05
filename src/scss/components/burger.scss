@@ -12,6 +12,7 @@ $scale: 1;			  // icon scale 68/68 default
     height: 68px;
     background: $blue;
     -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
     user-select: none;
     @include tablet {
       display: block;

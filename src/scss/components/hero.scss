@@ -49,6 +49,7 @@
         cursor: pointer;
         transform: translate(-20%,-50%);
         transition: $transition;
+        -webkit-tap-highlight-color: transparent;
         &--hidden {
             opacity: 0;
         }

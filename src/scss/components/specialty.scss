@@ -14,6 +14,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: rem(10);
+        
         &:last-child {
             > .specialty__card {
                 justify-content: center;
@@ -33,6 +34,8 @@
         min-height: 112px;
         transform: translateY(0%) scale(1);
         transition: $transition;
+        -webkit-tap-highlight-color: transparent;
+        
         &-thicker {
             display: flex;
             flex-direction: column;

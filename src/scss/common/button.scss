@@ -6,6 +6,7 @@
     font-size: 18px;
     cursor: pointer;
     transition: .3s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
     
     &__header {
         color: $white-color;

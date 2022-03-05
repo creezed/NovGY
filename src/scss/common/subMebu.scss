@@ -79,10 +79,12 @@
 
 // mobile //
 .submenu__mobile {
-    z-index: 11;
-    display: inline-block;
-    cursor: pointer;
     position: relative;
+    display: inline-block;
+    z-index: 11;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     & > .submenu-hidden {
         position: static;
     }
@@ -100,7 +102,7 @@
 @keyframes opacityMenuIn{
     0%{
         opacity:0;
-        transform: translateY(-20%);
+        transform: translateY(-5%);
     }
     100%{
         opacity:1;

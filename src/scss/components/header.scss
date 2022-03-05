@@ -9,6 +9,7 @@
     box-shadow: $regular-shadow;
     transition: $transition;
     &__logo {
+        -webkit-tap-highlight-color: transparent;
         img {
             max-height: rem(60);
             max-width: rem(60);
