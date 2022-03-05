@@ -9,6 +9,7 @@
         display: flex;
         flex-direction: column;
         gap: rem(10);
+        -webkit-tap-highlight-color: transparent;
         &-item {
             overflow: hidden;
             background-color: $white-color;

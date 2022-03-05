@@ -377,6 +377,7 @@ body {
   min-height: 112px;
   transform: translateY(0%) scale(1);
   transition: 0.25s ease-out;
+  -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
 }
 .specialty__card-thicker {
@@ -407,6 +408,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  -webkit-tap-highlight-color: transparent;
 }
 .faq__list-item {
   overflow: hidden;
