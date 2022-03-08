@@ -4,41 +4,53 @@ const burgerBtn = document.querySelector('.hamburglar');
 const navbar = document.querySelector('.navbar');
 const heroArrow = document.querySelector('.hero__arrow');
 const subMenuMobile = document.querySelectorAll('.submenu__mobile');
+const main = document.querySelector('main');
 
 
-
-new WOW().init();
-[...faq].map(item => item.addEventListener('click', () => {
-    item.classList.toggle('faq__list-item--active')
-}))
-
-window.addEventListener('scroll', () => {
-    let y = window.pageYOffset;
-    y > 150 ? header.classList.add('scroll') : header.classList.remove('scroll')
-    y > 300 ? heroArrow.classList.add('hero__arrow--hidden') : heroArrow.classList.remove('hero__arrow--hidden')
-})
-
-heroArrow.addEventListener('click', () => {
-    const headerHight = header.offsetHeight;
-    const sectionOffset = document.querySelector('section').offsetHeight;
-    window.scrollBy({
-        top: sectionOffset - headerHight,
-        behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', () => {
+    new WOW().init();
+    // faq //
+    [...faq].map(item => item.addEventListener('click', () => {
+        item.classList.toggle('faq__list-item--active')
+    }))
+    
+    window.addEventListener('scroll', () => {
+        let y = window.pageYOffset;
+        y > 150 ? header.classList.add('scroll') : header.classList.remove('scroll')
+        y > 300 ? heroArrow.classList.add('hero__arrow--hidden') : heroArrow.classList.remove('hero__arrow--hidden')
     })
-})
-
-burgerBtn.addEventListener('click', () => {
-    if (burgerBtn.classList.contains('is-open')) {
-        burgerBtn.classList.toggle('is-closed')
-        navbar.classList.toggle('navbar--open')
-    } else {
-        burgerBtn.classList.toggle('is-open')
-        navbar.classList.toggle('navbar--open')
-    }
-});
-
-[...subMenuMobile].map(item => {
-    item.addEventListener('click', () => {
-        item.classList.toggle('submenu__mobile--active')
+    
+    heroArrow.addEventListener('click', () => {
+        const headerHight = header.offsetHeight;
+        const sectionOffset = document.querySelector('section').offsetHeight;
+        window.scrollBy({
+            top: sectionOffset - headerHight,
+            behavior: 'smooth'
+        })
+    })
+    
+    burgerBtn.addEventListener('click', () => {
+        if (burgerBtn.classList.contains('is-open')) {
+            burgerBtn.classList.toggle('is-closed')
+            navbar.classList.toggle('navbar--open')
+            main.classList.toggle('main--aside-active')
+        } else {
+            main.classList.toggle('main--aside-active')
+            burgerBtn.classList.toggle('is-open')
+            navbar.classList.toggle('navbar--open')
+            main.addEventListener('click', () => {
+                if (burgerBtn.classList.contains('is-open')) {
+                    burgerBtn.classList.add('is-closed')
+                    navbar.classList.remove('navbar--open')
+                    main.classList.remove('main--aside-active')
+                }
+            })
+        }
+    });
+    
+    [...subMenuMobile].map(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('submenu__mobile--active')
+        })
     })
 })

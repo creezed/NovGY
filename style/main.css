@@ -253,6 +253,14 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  filter: blur(0px);
+  transition: 0.25s ease-out;
+}
+.main--aside-active {
+  filter: blur(5px);
+}
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -295,7 +303,7 @@ body {
   font-weight: 400;
   color: #fff;
 }
-@media (max-width: 376px) {
+@media (max-width: 576px) {
   .headline--typo-xxl {
     font-size: 2.125rem;
   }
@@ -457,6 +465,11 @@ body {
   text-align: center;
   color: #fff;
   padding: 0 10px;
+}
+@media (max-width: 576px) {
+  .hero__text {
+    max-width: 25rem;
+  }
 }
 .hero__arrow {
   opacity: 1;
