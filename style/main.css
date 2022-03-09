@@ -254,11 +254,12 @@ body {
 }
 
 .main {
+  will-change: filter;
   filter: blur(0px);
   transition: 0.25s ease-out;
 }
 .main--aside-active {
-  filter: blur(5px);
+  filter: blur(7px);
 }
 
 .wrapper {
@@ -964,7 +965,7 @@ body {
   background-color: #fff;
   padding: 2.5rem;
   box-shadow: 0px 4px 10px rgba(0, 47, 167, 0.3);
-  border-radius: 5px;
+  border-radius: 0px 50px 0px 0px;
   transition: 0.25s ease-out;
   overflow-y: scroll;
 }
