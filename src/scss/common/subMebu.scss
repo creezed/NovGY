@@ -35,6 +35,7 @@
         border-radius:$border-radius-m;          
         background-color:$main-color;
         box-shadow:0 0 5px rgba(#000, .15);
+        transition: $transition;
     }
     &-item {         
         display:block;
@@ -87,11 +88,13 @@
     -webkit-tap-highlight-color: transparent;
     & > .submenu-hidden {
         position: static;
+        display: block;
+        max-height: 0px;
+        transition: .3s ease-in-out;
     }
     &--active {
         .submenu-hidden {
-            display: block;
-            animation:opacityMenuIn .3s ease;
+            max-height: 1000px;
         }
         .submenu-text::after {
             transform: rotate(180deg);

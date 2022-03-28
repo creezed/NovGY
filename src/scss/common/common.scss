@@ -17,6 +17,16 @@ body {
     font-family:'PT Sans Caption', sans-serif;
     font-weight: $fw-regular;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+    will-change: filter;
+    filter: blur(0px);
+    transition: $transition;
+    &--aside-active {
+        filter: blur(7px);
+    }
 }
 
 .wrapper {

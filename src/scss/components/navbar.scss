@@ -9,7 +9,7 @@
     background-color: #fff;
     padding: rem(40);
     box-shadow: $regular-shadow;
-    border-radius: $border-radius-m;
+    border-radius: 0px 10px 0px 0px;
     transition: $transition;
     overflow-y: scroll;
     &__menu {

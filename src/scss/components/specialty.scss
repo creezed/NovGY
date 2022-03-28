@@ -4,7 +4,6 @@
     background-color: #fff;
     padding-bottom: 96px;
     &__title {
-        text-align: center;
         padding-top: 160px;
         padding-bottom: 64px;
     }
@@ -46,6 +45,7 @@
         }
         &-text {
             max-width: 335px;
+            text-align: start;
         }
         &:hover {
             transform: translateY(-1.5%) scale(1.02);

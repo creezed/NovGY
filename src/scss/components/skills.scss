@@ -1,0 +1,74 @@
+.skills {
+    margin-top: rem(96);
+    margin-bottom: rem(96);
+    &-text {
+        margin-bottom: rem(48);
+        line-height: 1;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        @include tablet {
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+    &-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        background-color: $white-color;
+        border-radius: 15px;
+        box-shadow: 0px -4px 0px #161B88;
+        border: 1px solid $skills-card-color;
+        &__title {
+            max-width: 280px;
+        }
+
+
+
+        &:first-child {
+            box-shadow: -8px -4px 0px $skills-card-color;
+        }
+        &:last-child {
+            box-shadow: 8px 4px 0px $skills-card-color;
+        }
+        &:nth-child(2) {
+            box-shadow: 0px -4px 0px $skills-card-color;
+
+            @include tablet {
+                box-shadow: 8px -4px 0px $skills-card-color;
+            }
+        }
+        &:nth-child(3) {
+            box-shadow: 8px -4px 0px $skills-card-color;
+            @include tablet {
+                box-shadow: -4px 0px 0px $skills-card-color;
+            }
+        }
+        &:nth-child(4) {
+            box-shadow: -8px 4px 0px $skills-card-color;
+            @include tablet {
+                box-shadow: 4px 0px 0px $skills-card-color;
+            }
+        }
+        &:nth-child(5) {
+            box-shadow: 0px 4px 0px $skills-card-color;
+            @include tablet {
+                box-shadow: -8px 4px 0px $skills-card-color;
+            }
+        }
+        
+        @include mobile {
+            &:nth-child(1n + 1) {
+                box-shadow: -8px -4px 0px $skills-card-color;
+            }
+        }
+    }
+}

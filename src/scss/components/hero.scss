@@ -37,6 +37,9 @@
         text-align: center;
         color: $white-color;
         padding: 0 10px;
+        @include mobile {
+            max-width: rem(400);
+        }
     }
 
     // arrow animate
