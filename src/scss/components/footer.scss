@@ -2,6 +2,7 @@
     color: $white-color;
     background-color: $main-color;
     padding: rem(70) 0;
+
     &-map {
         max-width: 100%;
         @include tablet {
@@ -12,13 +13,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: rem(20);
+        gap: 30px;
         padding: rem(40) 0 rem(6);
         @include small-tablet {
             justify-content: center;
         }
         @include mobile {
-            justify-content: flex-start;
+            font-size: 15px;
         }
     }
     &-form {
@@ -45,6 +46,13 @@
             outline: none;
             resize: none;
         }
+        @include tablet {
+            width: 100%;
+            align-items: flex-start;
+        }
+        @include mobile {
+            align-items: initial;
+        }
     }
 
     &-left {
@@ -62,9 +70,16 @@
     &-link {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
         &__title {
             margin-bottom: 8px;
+        }
+        &__link {
+            padding: 10px 0;
+            transition: $transition;
+            &:hover {
+                color: $hover-color;
+            }
         }
     }
 
@@ -85,6 +100,12 @@
         flex-direction: column;
         gap: rem(8);
         margin-bottom: rem(27);
+        & > a {
+            transition: $transition;
+            &:hover {
+                color: $hover-color;
+            }
+        }
     }
     &-social {
         display: flex;
@@ -92,10 +113,18 @@
         gap: rem(16);
         &__list {
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
         &__icon {
-            max-width: 26px;
+            cursor: pointer;  
+            path {
+                transition: $transition;
+            }
+            &:hover {
+                path {
+                    fill: $hover-color;
+                }
+            }
         }
     }
     &-bottom {
@@ -103,12 +132,24 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        text-align: center;
         gap: rem(46);
+        & > a {
+            transition: $transition;
+            &:hover {
+                color: $hover-color;
+            }
+        }
         @include tablet {
+            gap: 0;
             flex-direction: column;
+            align-items: center;
+            & > a {
+                padding: 20px;
+            }
         }
         @include mobile {
-            gap: rem(26);
+            font-size: 15px;
         }
     }
 }

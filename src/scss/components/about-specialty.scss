@@ -18,6 +18,12 @@
         text-align: justify;
     }
 
+    &__descr {
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+
     &__img {
         min-width: 40%;
         max-height: 470px;

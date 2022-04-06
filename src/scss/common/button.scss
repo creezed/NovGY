@@ -15,7 +15,7 @@
         border-radius: $border-radius-m;
         border: 2px solid transparent;
         &:hover {
-            background-color: #052064;
+            background-color: $hover-color;
         }
 
         &--stroke {
@@ -25,8 +25,9 @@
             border-radius: $border-radius-m;
             font-weight: $fw-regular;
             &:hover {
-                background-color: $main-color;
-                color: $white-color;
+                border: 2px solid $hover-color;
+                background-color: transparent;
+                color: $hover-color;
             }
         }
     }
@@ -38,7 +39,7 @@
         border-radius: $border-radius-m;
         font-weight: $body-size-l;
         &:hover {
-            background-color: #052064;
+            background-color: $hover-color;
         }
     }
 
@@ -50,7 +51,8 @@
         font-weight: $body-size-m;
         border: 0;
         &:hover {
-            background-color: #eee;
+            background-color: $hover-color;
+            color: $white-color;
         }
     }
     &:active {
