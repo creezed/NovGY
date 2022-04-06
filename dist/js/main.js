@@ -4,11 +4,32 @@ const burgerBtn = document.querySelector('.hamburglar');
 const navbar = document.querySelector('.navbar');
 const heroArrow = document.querySelector('.hero__arrow');
 const subMenuMobile = document.querySelectorAll('.submenu__mobile');
-const main = document.querySelector('main');
+const navbarBackground = document.querySelector('.navbar-background');
 const video = document.querySelector('#specialty-video');
+
+const hero = document.querySelector('.hero');
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     new WOW().init();
+
+    // bg
+    (function setHeroBg() {
+        let dateNow = new Date();
+        let getMonth = dateNow.getMonth() + 1;
+        
+        try
+        {
+            if (getMonth >= 3 && getMonth <= 8) {
+                hero.style.backgroundImage = "url('./assets/img/hero-bg-leto.webp')";
+            } else {
+                hero.style.backgroundImage = "url('./assets/img/hero-bg-zim.webp')";
+            }
+        } catch (e) {
+            return e;
+        }
+    })();
     // faq //
     faq.forEach(item => item.addEventListener('click', () => {
         item.classList.toggle('faq__list-item--active')
@@ -36,16 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (burgerBtn.classList.contains('is-open')) {
             burgerBtn.classList.toggle('is-closed')
             navbar.classList.toggle('navbar--open')
-            main.classList.toggle('main--aside-active')
+            navbarBackground.classList.toggle('navbar-background--active')
         } else {
-            main.classList.toggle('main--aside-active')
+            navbarBackground.classList.toggle('navbar-background--active')
             burgerBtn.classList.toggle('is-open')
             navbar.classList.toggle('navbar--open')
-            main.addEventListener('click', () => {
+            navbarBackground.addEventListener('click', () => {
                 if (burgerBtn.classList.contains('is-open')) {
                     burgerBtn.classList.add('is-closed')
                     navbar.classList.remove('navbar--open')
-                    main.classList.remove('main--aside-active')
+                    navbarBackground.classList.remove('navbar-background--active')
                 }
             })
         }
@@ -59,5 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // video
-    video.volume = .1;
+    try {
+        video.volume = .2;
+    } catch (e) {
+        return e
+    }
+
+    // bg time
 })
+
