@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="НовГУ">
+    <meta name="theme-color" content="#002fa7">
+    <title>Политехнический колледж НовГУ</title>
+    <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/icon/Logo.svg">
+    <link rel="stylesheet" media="all" href="./style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper wrapper--header header--container">
+            <a href="index.html" class="logo header__logo"><img src="./assets/icon/LogoWithoutText.svg" width="60" height="60" alt="logo"></a>
+            <nav class="header__right">
+                <div class="submenu">
+                    <span class="submenu-text submenu-text--header body__text--typo-l">Колледжи</span>
+                    <ul class="submenu-hidden">
+                        <li class="submenu-item"><a href="index.html">Политехнический колледж</a></li>
+                        <li class="submenu-item"><a href="#">Гуманитарно-экономический колледж</a></li>
+                        <li class="submenu-item"><a href="#">Медицинский колледж</a></li>
+                        <li class="submenu-item"><a href="#">Старорусский политехнический колледж (филиал) НовГУ</a></li>
+                    </ul>
+                </div>
+                <div class="submenu">
+                    <span class="submenu-text submenu-text--header body__text--typo-l">Специальности</span>
+                    <ul class="submenu-hidden">
+                        <li class="submenu-item"><a href="./s-2.html">Информационные системы и программирование</a></li>
+                        <li class="submenu-item"><a href="#">Графический дизайнер</a></li>
+                        <li class="submenu-item"><a href="#">Технология машиностроения</a></li>
+                        <li class="submenu-item"><a href="#">Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей</a></li>
+                        <li class="submenu-item"><a href="#">Сетевое и системное администрирование</a></li>
+                        <li class="submenu-item"><a href="#">Компьютерные системы и комплексы</a></li>
+                        <li class="submenu-item"><a href="#">Оснащение средствами автоматизации технологических процессов и производств (по отраслям)</a></li>
+                    </ul>
+                </div>
+                <div class="header-btn__wrapper">
+                    <a href="#" class="btn btn__header btn__header--stroke">Пройти проф-тест</a>
+                    <a href="#" class="btn btn__header">Подать документы</a>
+                </div>
+            </nav>
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                  <div class="burger-container">
+                    <span class="burger-bun-top"></span>
+                    <span class="burger-filling"></span>
+                    <span class="burger-bun-bot"></span>
+                  </div>
+                </div>
+                
+                <div class="burger-ring">
+                  <svg class="svg-ring">
+                      <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                  </svg>
+                </div>
+                
+                <svg width="0" height="0">
+                   <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="#002fa7" stroke="#002fa7" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                   </mask>
+                </svg>
+                <div class="path-burger">
+                  <div class="animate-path">
+                    <div class="path-rotation"></div>
+                  </div>
+                </div>
+            </div>
+            <aside class="navbar">
+                <a href="/" class="logo header__logo"><img src="./assets/icon/LogoWithoutText.svg" width="60" height="60" alt="logo"></a>
+                <nav class="navbar__menu">
+                    <div class="submenu__mobile">
+                        <span class="submenu-text submenu-text--header body__text--typo-l">Колледжи</span>
+                        <ul class="submenu-hidden">
+                            <li class="submenu-item"><a href="#">Политехнический колледж</a></li>
+                            <li class="submenu-item"><a href="#">Гуманитарно-экономический колледж</a></li>
+                            <li class="submenu-item"><a href="#">Медицинский колледж</a></li>
+                            <li class="submenu-item"><a href="#">Старорусский политехнический колледж (филиал) НовГУ</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu__mobile">
+                        <span class="submenu-text submenu-text--header body__text--typo-l">Специальности</span>
+                        <ul class="submenu-hidden">
+                            <li class="submenu-item"><a href="./s-2.html">Информационные системы и программирование</a></li>
+                            <li class="submenu-item"><a href="#">Графический дизайнер</a></li>
+                            <li class="submenu-item"><a href="#">Технология машиностроения</a></li>
+                            <li class="submenu-item"><a href="#">Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей</a></li>
+                            <li class="submenu-item"><a href="#">Сетевое и системное администрирование</a></li>
+                            <li class="submenu-item"><a href="#">Компьютерные системы и комплексы</a></li>
+                            <li class="submenu-item"><a href="#">Оснащение средствами автоматизации технологических процессов и производств (по отраслям)</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-btn__wrapper">
+                        <a href="#" class="btn btn__header btn__header--stroke">Пройти проф-тест</a>
+                        <a href="#" class="btn btn__header">Подать документы</a>
+                    </div>
+                </nav>
+            </aside>
+            <div class="navbar-background"></div>
+        </div>
+    </header>
+    <main>
+        <section class="specialty-hero">
+            <div class="hero__text">
+                <h1 class="wow fadeInUp headline headline--typo-xxl">Информационные технологии и программирование</h1>
+            </div>
+            <div class="hero__arrow">
+                <span></span>
+                <span></span>
+            </div> 
+        </section>
+        <section class="about-specialty wrapper">
+            <h2 class="about-specialty__title headline headline--typo-xl">О профессии</h2>
+            <div class="about-specialty__content">
+                <div class="about-specialty__text">
+                    <p class="about-specialty__descr body__text body__text--typo-l">
+                        Специальность охватывает достаточно широкий спектр сфер профессиональной деятельности, что позволяет получить знания о безопасности информационных систем, техническом обслуживании и ремонте компьютеров, администрировании сетей, прикладном и системном программировании, WEB-дизайне и графическом моделировании объектов. Позволяет получить опыт в разработке и интеграции модулей программного обеспечения, администрировании баз данных, сопровождении программного обеспечения.
+                    </p>
+                </div>
+                <picture class="wow fadeInUp about-specialty__img">
+                    <img src="./assets/img/spec-hero-bg.jpg" alt="desktop">
+                </picture>
+            </div>
+        </section>
+        <section class="specialty-gallery">
+            <div class="specialty-gallery--wrapper wrapper">
+                <div class="specialty-gallery__item" style="background-image: url('./assets/img/bg-9.jpg');"></div>
+                <div class="specialty-gallery__item" style="background-image: url('./assets/img/mac.jpg');"></div>
+                <div class="specialty-gallery__item" style="background-image: url('./assets/img/bg-1.webp');"></div>
+                <div class="specialty-gallery__item" style="background-image: url('./assets/img/bg-11.jpg');"></div>
+            </div>
+        </section>
+        <section class="callToAction callToAction--wrapper">
+            <div class="wrapper">
+                <div class="callToAction__content">
+                    <div class="callToAction__text">
+                        <h3 class="callToAction-title">Успейте подать документы!</h2>
+                        <p class="callToAction-descr">Количество бюджетных мест ограничено!</p>
+                    </div>
+                    <a class="btn btn__CallToAction" href="/">Подать документы</a>
+                </div>
+            </div>
+        </section>
+        <section class="disciplines wrapper">
+            <div class="disciplines-text">
+                <h2 class="headline headline--typo-xl">Дисциплины</h2>
+                <p class="headline--color-gray headline headline--typo-l">которые Вы будете изучать</p>
+            </div>
+            <ul class="disciplines-list">
+                <li class="wow fadeInUp disciplines-item">
+                    <figure class="disciplines-item__body">
+                        <picture class="disciplines-item__img">
+                            <img src="./assets/img/mobile.jpg" alt="disciplinesImg">
+                        </picture>
+                        <figcaption class="disciplines-item__text">
+                            <h3 class="disciplines-item__title">Разработка мобильных приложений</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="wow fadeInUp disciplines-item">
+                    <figure class="disciplines-item__body">
+                        <picture class="disciplines-item__img">
+                            <img src="./assets/img/database.jpg" alt="disciplinesImg">
+                        </picture>
+                        <figcaption class="disciplines-item__text">
+                            <h3 class="disciplines-item__title">База данных</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="wow fadeInUp disciplines-item">
+                    <figure class="disciplines-item__body">
+                        <picture class="disciplines-item__img">
+                            <img src="./assets/img/web design.jpg" alt="disciplinesImg">
+                        </picture>
+                        <figcaption class="disciplines-item__text">
+                            <h3 class="disciplines-item__title">Web разработка</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="wow fadeInUp disciplines-item">
+                    <figure class="disciplines-item__body">
+                        <picture class="disciplines-item__img">
+                            <img src="./assets/img/code.jpg" alt="disciplinesImg">
+                        </picture>
+                        <figcaption class="disciplines-item__text">
+                            <h3 class="disciplines-item__title">Изучение языков программирования</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="skills wrapper">
+            <div class="skills-text">
+                <h2 class="headline headline--typo-xl">Навыки</h2>
+                <p class="headline--color-gray headline headline--typo-l">которые вы получите</p>
+            </div>
+            <ul class="skills-list wow fadeInUp">
+                <li class="skills-card">
+                    <h4 class="skills-card__title headline headline--typo-m">Cтруктура данных и алгоритмы</h4>
+                </li>
+                <li class="skills-card">
+                    <h4 class="skills-card__title headline headline--typo-m">Разработка баз данных</h4>
+                </li>
+                <li class="skills-card">
+                    <h4 class="skills-card__title headline headline--typo-m">Техническое мышление</h4>
+                </li>
+                <li class="skills-card">
+                    <h4 class="skills-card__title headline headline--typo-m">Работа с документами</h4>
+                </li>
+                <li class="skills-card">
+                    <h4 class="skills-card__title headline headline--typo-m">Основы UX и UI дизайна</h4>
+                </li>
+                <li class="skills-card">
+                    <h4 class="skills-card__title headline headline--typo-m">С#, C++, Java, JavaScript, Python и др.</h4>
+                </li>
+            </ul>
+        </section>
+        <section class="callToAction callToAction--wrapper">
+            <div class="wrapper">
+                <div class="callToAction__content callToAction__content--reduced">
+                    <div class="callToAction__text callToAction__text--reduced">
+                        <h3 class="callToAction-title">Заинтересовало?</h2>
+                        <p class="callToAction-descr headline headline--typo-l">Подайте документы на поступление</p>
+                    </div>
+                    <a class="btn btn__CallToAction" href="/">Подать документы</a>
+                </div>
+            </div>
+        </section>
+        <section class="specialty-video wrapper">
+            <div class="specialty-video-text">
+                <h2 class="headline headline--typo-xl">Видео</h2>
+                <p class="headline--color-gray headline headline--typo-l">о профессии</p>
+            </div>
+            <div class="specialty-video__video wow fadeInUp">
+                <video id="specialty-video" controls loop>
+                    <source src="./assets/video/1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-map">
+            <iframe class="footer-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A367877ee101f216a801962ba2aa298cdf1862b7c250a9a3e3a658b5a2a5fc127&amp;source=constructor" title="ymap" width="100%" height="500" frameborder="0" loading = "lazy"></iframe>
+        </div>
+        <div class="wrapper">
+            <div class="footer-content body__text--typo-m">
+                <div class="footer-left">
+                    <div class="footer-hero">
+                        <a href="/" class="logo-footer footer-logo--wrapper"><img src="./assets/icon/Logo.svg" width="210" height="65" alt="logo"></a>
+                        <small class="footer-copyright">&copy; НовГУ с 1993 по 2022</small>
+                        <address class="footer-addres">
+                            Великий Новгород, ул. Большая Санкт-Петербургская, д. 46 
+                        </address>
+                        <span class="footer-committee">
+                            Приемная комиссия:
+                            <a href="tel:88162332044">8 (8162) 33-20-44</a>
+                        </span>
+                        <div class="footer-social">
+                            <span class="footer-social__text">Мы в соцсетях:</span>
+                            <div class="footer-social__list">
+                                <a href="https://vk.com/novsuru" class="footer-social__icon">
+                                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_767_838)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 13.7798C26 21.0811 20.1797 27.0001 13 27.0001C5.8203 27.0001 0 21.0811 0 13.7798C0 6.47838 5.8203 0.559448 13 0.559448C20.1797 0.559448 26 6.47838 26 13.7798ZM13.5293 19.5781H12.509C12.509 19.5781 10.2576 19.716 8.27512 17.6169C6.11301 15.3274 4.2035 10.7843 4.2035 10.7843C4.2035 10.7843 4.09342 10.4864 4.213 10.3424C4.34741 10.1805 4.71355 10.1702 4.71355 10.1702L7.15259 10.1539C7.15259 10.1539 7.38247 10.193 7.547 10.3158C7.68257 10.4171 7.75858 10.6066 7.75858 10.6066C7.75858 10.6066 8.15277 11.6205 8.67487 12.5377C9.69382 14.3282 10.1684 14.7199 10.5144 14.528C11.0184 14.2484 10.8673 11.9967 10.8673 11.9967C10.8673 11.9967 10.8766 11.1795 10.6136 10.8157C10.4099 10.5335 10.0257 10.4513 9.85603 10.4282C9.71885 10.4096 9.9441 10.0855 10.2361 9.94014C10.675 9.72145 11.4502 9.70896 12.366 9.71862C13.0795 9.72592 13.2848 9.77117 13.5638 9.83975C14.2112 9.9987 14.191 10.508 14.1474 11.6069C14.1344 11.9353 14.1193 12.3163 14.1193 12.7563C14.1193 12.8553 14.1165 12.9609 14.1136 13.0694C14.0984 13.6322 14.0811 14.2766 14.4454 14.516C14.6321 14.6386 15.0891 14.5344 16.2321 12.5607C16.7739 11.6254 17.1801 10.5255 17.1801 10.5255C17.1801 10.5255 17.2688 10.3295 17.4067 10.2453C17.5479 10.1595 17.7381 10.1859 17.7381 10.1859L20.3048 10.1697C20.3048 10.1697 21.0761 10.0761 21.201 10.4301C21.3319 10.8017 20.9127 11.6695 19.8641 13.0908C18.8682 14.4406 18.3843 14.9366 18.4298 15.3761C18.463 15.6964 18.7775 15.9866 19.3802 16.5555C20.6436 17.7481 20.9804 18.3743 21.0604 18.5231C21.0669 18.5352 21.0717 18.544 21.0751 18.5499C21.6406 19.5034 20.4481 19.5781 20.4481 19.5781L18.1685 19.6104C18.1685 19.6104 17.6786 19.7092 17.0339 19.2588C16.6967 19.0234 16.3671 18.6391 16.053 18.273C15.573 17.7133 15.1292 17.196 14.7506 17.3181C14.1151 17.5231 14.1351 18.9154 14.1351 18.9154C14.1351 18.9154 14.1397 19.2128 13.9949 19.3712C13.8375 19.5437 13.5293 19.5781 13.5293 19.5781Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_767_838">
+                                        <rect width="26" height="26.4406" fill="white" transform="translate(0 0.559448)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                
+                                </a>
+                                <a href="#" class="footer-social__icon">
+                                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_767_840)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 13.7798C26 21.0811 20.1797 27.0001 13 27.0001C5.8203 27.0001 0 21.0811 0 13.7798C0 6.47838 5.8203 0.559448 13 0.559448C20.1797 0.559448 26 6.47838 26 13.7798ZM13.9485 14.2972H16.2682L16.5752 11.2627H13.9487V9.47523C13.9487 8.80476 14.3844 8.64734 14.6942 8.64734H16.5831V5.69918L13.9798 5.6881C11.0905 5.6881 10.4339 7.88897 10.4339 9.29448V11.26H8.76242V14.2972H10.4339V22.9395H13.9485V14.2972Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_767_840">
+                                        <rect width="26" height="26.4406" fill="white" transform="translate(0 0.559448)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>  
+                                </a>
+                                <a href="https://t.me/news_novsu" class="footer-social__icon">
+                                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_767_842)">
+                                        <path d="M13 27.0001C20.1814 27.0001 26 21.0829 26 13.7798C26 6.47663 20.1814 0.559448 13 0.559448C5.81858 0.559448 0 6.47663 0 13.7798C0 21.0829 5.81858 27.0001 13 27.0001ZM5.94858 13.4933L18.4828 8.57866C19.0645 8.36494 19.5726 8.72299 19.3841 9.61756L19.3852 9.61646L17.251 19.8413C17.0928 20.5661 16.6693 20.7425 16.0767 20.4009L12.8267 17.9651L11.2591 19.5009C11.0858 19.6771 10.9395 19.8258 10.6037 19.8258L10.8344 16.4624L16.8578 10.9285C17.1199 10.6939 16.7993 10.5617 16.4537 10.7953L9.01008 15.5612L5.80125 14.5433C5.10467 14.3185 5.0895 13.8349 5.94858 13.4933Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_767_842">
+                                        <rect width="26" height="26.4406" fill="white" transform="translate(0 0.559448)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="footer-link">
+                        <li><span class="footer-link__title">Ссылки:</span></li>
+                        <li><a class="footer-link__link" href="https://www.novsu.ru/">НовГУ</a></li>
+                        <li><a class="footer-link__link" href="https://novsu.ru/abitur/">Абитуриентам</a></li>
+                        <li><a class="footer-link__link" href="https://www.novsu.ru/university/press/events/59200/">Школьникам</a></li>
+                        <li><a class="footer-link__link" href="https://www.novsu.ru/graduates/">Выпускникам</a></li>
+                        <li><a class="footer-link__link" href="https://www.novsu.ru/study/">Студентам</a></li>
+                    </ul>
+                </div>
+                <form class="footer-form">
+                    <input class="footer-form__input" type="text" placeholder="ФИО">
+                    <input class="footer-form__input" type="text" placeholder="Адрес электронной почты">
+                    <textarea class="footer-form__textarea" placeholder="Ваше сообщение..."></textarea>
+                    <button class="btn btn__submit" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <a href="#">Сведения об образовательной организации</a>
+                <a href="#">Политика по обработке персональных данных</a>
+            </div>
+        </div>
+    </footer>
+    <script defer src="./js/wow.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</body>
+</html>
